@@ -1,12 +1,13 @@
 {
-  "name": "ecotrack",
-  "private": true,
+  "name": "ecotrack-backend",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
-    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
-    "build": "npm --prefix frontend run build"
+    "dev": "node --watch server.js",
+    "start": "node server.js"
   },
-  "devDependencies": {
-    "concurrently": "^9.1.2"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
   }
 }
