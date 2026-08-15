@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://ecotrack-api-5v9b.onrender.com/api";
 
 function App() {
   const [dashboard, setDashboard] = useState({
